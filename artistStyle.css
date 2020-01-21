@@ -1,0 +1,89 @@
+body {
+  
+}
+
+#searchbox {
+	border: 1px solid #cccccc;
+	background-color: #fcfcfc;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#title {
+	font-family: Aharoni, Helvetica, sans-serif;
+	margin-left: 25px;
+	margin-top: 18px;
+	margin-bottom: 20px;
+}
+
+#searchform {
+	height: min-content;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 26px;
+}
+
+#search {
+	margin-left: 25px;
+	width: 400px;
+}
+
+#artistlist {
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.artist {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 13px;
+	padding-right: 13px;
+	height: 50px;
+	width: 300px;
+	border: 1px solid #cccccc;
+	background-color: #fcfcfc;
+	
+}
+
+.artist:hover {
+	background-color: #d9d9d9;
+	cursor: pointer;
+}
+
+.piccontainer {
+	height: max-content;
+	width: max-content;
+}
+
+.artistpic {
+	float: left;
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+}
+
+.artistinfo {
+	height: max-content;
+	vertical-align: middle;
+	margin-left: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.artistname{
+	margin-top:2px;
+	margin-bottom: 2px;
+	color: #666666;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.artistdesc{
+	margin-top:2px;
+	margin-bottom: 2px;
+	color: #737373;
+	vertical-align: middle;
+	font-family: Bookman, Helvetica, sans-serif;
+}
