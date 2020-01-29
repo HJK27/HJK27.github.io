@@ -3,13 +3,23 @@
 		<title>
 			Artist Directory
 		</title>
-		<link rel="stylesheet" type="text/css" href="./artistStyle.css">
+		<link rel="stylesheet" type="text/css" href="../css/artistStyle.css">
 	</head>
 	<body>
+		<script src="../js/script.js" defer></script>
 		<div id="searchbox">
 			<h2 id="title">Artist Directory</h2>
 			<form id="searchform">
 				<input type="text" id="search">
+				<button id="btnAddArtist" type="button">Add artist</button>
+			</form>
+		</div>
+		<div id="addbox">
+			<form id="addform">
+				<input type="text" id="aname" class="ainputs" placeholder="Artist Name" maxlength="40"><br>
+				<input type="text" id="adesc" class="ainputs" placeholder="About Artist" maxlength="40"><br>
+				<input type="text" id="aurl" class="ainputs" placeholder="Image URL"><br>
+				<button id="btnSubmitArtist" type="button">Add</button>
 			</form>
 		</div>
 		<div id="artistList">
@@ -21,6 +31,7 @@
 					<h4 class="artistname">Name Name</h5>
 					<p class="artistdesc">desc</p>
 				</div>
+				<button class="deletebutton" type="button">Delete</button>
 			</div>
 			<div class="artist">
 				<div class="piccontainer">
@@ -30,6 +41,7 @@
 					<h4 class="artistname">Name Name</h5>
 					<p class="artistdesc">desc</p>
 				</div>
+				<button class="deletebutton" type="button">Delete</button>
 			</div>
 			<div class="artist">
 				<div class="piccontainer">
@@ -39,6 +51,7 @@
 					<h4 class="artistname">Name Name</h5>
 					<p class="artistdesc">desc</p>
 				</div>
+				<button class="deletebutton" type="button">Delete</button>
 			</div>
 			<div class="artist">
 				<div class="piccontainer">
@@ -48,6 +61,7 @@
 					<h4 class="artistname">Name Name</h5>
 					<p class="artistdesc">desc</p>
 				</div>
+				<button class="deletebutton" type="button">Delete</button>
 			</div>
 			<div class="artist">
 				<div class="piccontainer">
@@ -57,6 +71,7 @@
 					<h4 class="artistname">Name Name</h5>
 					<p class="artistdesc">desc</p>
 				</div>
+				<button class="deletebutton" type="button">Delete</button>
 			</div>
 		</div>
 	</body>

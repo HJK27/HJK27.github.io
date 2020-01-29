@@ -3,6 +3,7 @@ body {
 }
 
 #searchbox {
+	font-family: Aharoni, Helvetica, sans-serif;
 	border: 1px solid #cccccc;
 	background-color: #fcfcfc;
 	width: 450px;
@@ -12,10 +13,18 @@ body {
 }
 
 #title {
-	font-family: Aharoni, Helvetica, sans-serif;
 	margin-left: 25px;
 	margin-top: 18px;
 	margin-bottom: 20px;
+}
+
+#addbox {
+	font-family: Aharoni, Helvetica, sans-serif;
+	border: none;
+	background-color: #fcfcfc;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #searchform {
@@ -26,14 +35,76 @@ body {
 }
 
 #search {
-	margin-left: 25px;
-	width: 400px;
+	margin-left: 18px;
+	margin-right: 18px;
+	width: 320px;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	height: 2em;
+}
+
+#btnAddArtist {
+	background-color: #cccccc;
+	border: none;
+	cursor: pointer;
+	height: 2.5em;
+	width: 75px;
+}
+
+#addform {
+	height: 0px;
+	width: 100%;
+	margin-bottom: 0;
+	display: none;
+}
+
+.ainputs {
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #cccccc;
+	height: 0em;
+	display: none;
+}
+
+#aname {
+
+}
+
+#adesc {
+
+}
+
+#aurl {
+
+}
+
+#btnSubmitArtist {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #cccccc;
+	border: none;
+	cursor: pointer;
+	height: 0em;
+	display: none;
 }
 
 #artistlist {
 	width: max-content;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.deletebutton {
+	border: none;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	float:right;
+	cursor: pointer;
+	vertical-align: middle;
+	height: 30px;
 }
 
 .artist {
@@ -63,13 +134,16 @@ body {
 	height: 50px;
 	width: 50px;
 	border-radius: 5px;
+	float:left;
 }
 
 .artistinfo {
 	height: max-content;
 	vertical-align: middle;
-	margin-left: 60px;
+	margin-left: 10px;
 	font-family: Arial, Helvetica, sans-serif;
+	width: 150px;
+	float: left;
 }
 
 .artistname{
@@ -78,6 +152,7 @@ body {
 	color: #666666;
 	font-weight: bold;
 	vertical-align: middle;
+	margin-right: 0px;
 }
 
 .artistdesc{
@@ -86,4 +161,5 @@ body {
 	color: #737373;
 	vertical-align: middle;
 	font-family: Bookman, Helvetica, sans-serif;
+	margin-right: 0px;
 }
