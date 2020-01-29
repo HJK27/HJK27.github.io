@@ -1,5 +1,6 @@
 let addButton = document.getElementById('btnAddArtist');
 let aBtn = document.getElementById('btnSubmitArtist');
+let expanded = false;
 addButton.addEventListener('click', addArtistExpand);
 aBtn.addEventListener('click', submitArtist);
 
@@ -15,19 +16,41 @@ function addArtistExpand() {
 	let aDesc = document.getElementById('adesc');
 	let aURL = document.getElementById('aurl');
 	
-	aName.style.height = '2em';
-	aDesc.style.height = '2em';
-	aURL.style.height = '2em';
-	aBtn.style.height = '2.5em';
-	addBox.style.border = '1px solid #cccccc';
-	addForm.style.display = 'block';
-	aName.style.display = 'inline';
-	aDesc.style.display = 'inline';
-	aURL.style.display = 'inline';
-	aBtn.style.display = 'block';
-	addForm.style.height = 'min-content';
-	addForm.display = 'block';
+	if(expanded) {
+		aName.value = "";
+		aDesc.value = "";
+		aURL.value = "";
+		aName.style.height = '0em';
+		aDesc.style.height = '0em';
+		aURL.style.height = '0em';
+		aBtn.style.height = '0em';
+		addBox.style.border = 'none';
+		addForm.style.display = 'none';
+		aName.style.display = 'none';
+		aDesc.style.display = 'none';
+		aURL.style.display = 'none';
+		aBtn.style.display = 'none';
+		addForm.style.height = '0px';
+		addForm.display = 'none';
+		expanded = false;
+	} else {
+		aName.style.height = '2em';
+		aDesc.style.height = '2em';
+		aURL.style.height = '2em';
+		aBtn.style.height = '2.5em';
+		addBox.style.border = '1px solid #cccccc';
+		addForm.style.display = 'block';
+		aName.style.display = 'inline';
+		aDesc.style.display = 'inline';
+		aURL.style.display = 'inline';
+		aBtn.style.display = 'block';
+		addForm.style.height = 'min-content';
+		addForm.display = 'block';
+		expanded = true;
+	}
 }
+
+
 
 function submitArtist() {
 	let addBox = document.getElementById('addbox');
@@ -92,6 +115,7 @@ function submitArtist() {
 	aBtn.style.display = 'none';
 	addForm.style.height = '0px';
 	addForm.display = 'none';
+	expanded = false;
 }
 
 function deletenode() {
