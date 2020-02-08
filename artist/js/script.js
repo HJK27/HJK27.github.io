@@ -155,7 +155,7 @@ function search() {
 	b = a.value;
 	
 	for (i=0; i < parseInt(localStorage.getItem("amount")); i++) {
-		if (localStorage.getItem("aNames" + i) != null && localStorage.getItem("aNames" + i).includes(b)){
+		if (localStorage.getItem("aNames" + i) != null && localStorage.getItem("aNames" + i).toLowerCase().includes(b.toLowerCase())){
 			addArtistItem(localStorage.getItem("aNames" + i),localStorage.getItem("aDescs" + i),localStorage.getItem("aURLs" + i), i);
 		}
 	}
