@@ -36,7 +36,7 @@ body {
 
 #search {
 	margin-left: 18px;
-	margin-right: 18px;
+	margin-right: 5px;
 	width: 320px;
 	border-radius: 5px;
 	border: 1px solid #cccccc;
@@ -48,7 +48,15 @@ body {
 	border: none;
 	cursor: pointer;
 	height: 2.5em;
-	width: 75px;
+	width: 40px;
+}
+
+#btnSearch {
+	background-color: #cccccc;
+	border: none;
+	cursor: pointer;
+	height: 2.5em;
+	width: 53px;
 }
 
 #addform {
@@ -64,6 +72,10 @@ body {
 	border-radius: 5px;
 	border: 1px solid #cccccc;
 	height: 0em;
+	display: none;
+}
+
+.amount {
 	display: none;
 }
 
